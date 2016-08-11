@@ -7,9 +7,10 @@
 </g>
 <g id="Layer_1">
 	<g>
-		<polygon fill="none" stroke="#24B34B" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-			7.365,2.972 9.312,6.917 13.666,7.55 10.516,10.621 11.259,14.957 7.365,12.909 3.472,14.957 4.215,10.621 1.064,7.55 
-			5.418,6.917 		"/>
+		
+			<polygon fill="none" stroke="#24B34B" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			7.366,1.962 9.313,5.907 13.667,6.54 10.517,9.611 11.26,13.947 7.366,11.899 3.473,13.947 4.216,9.611 1.065,6.54 5.419,5.907 		
+			"/>
 	</g>
 </g>
 </svg>
