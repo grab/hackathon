@@ -1,13 +1,109 @@
 $theme-green: #24b34b;
+$theme-gray: #363a45;
 
 $brand-primary: $theme-green;
 
-html, body {
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$tablet-width: 768px;
+
+html,
+body {
   background-color: $brand-primary;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  overflow-x: hidden;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+ol,
+ul {
+  padding-left: 20px;
+
+  > li {
+    margin-bottom: 20px;
+  }
 }
 
 .logo {
   display: block;
   margin: 30px auto;
   max-width: 600px;
+  width: 80%;
+}
+
+.hashtag {
+  font-weight: $font-weight-bold;
+  font-style: italic;
+}
+
+.section {
+  $line-color: #fff;
+  $degree: -10deg;
+  $padding: 30px;
+
+  padding-bottom: $padding;
+  padding-top: $padding;
+  position: relative;
+
+  &:before {
+    $line-width: 200%;
+
+    border-top: 10px solid $line-color;
+    content: ' ';
+    display: block;
+    left: -$line-width/4;
+    position: absolute;
+    width: $line-width;
+    transform: rotate($degree);
+  }
+
+  .section-heading {
+    transform: rotate($degree) skew($degree);
+
+    .section-heading-name {
+      background-color: $line-color;
+      color: $theme-gray;
+      font-size: 48px;
+      font-weight: $font-weight-bold;
+      padding: 10px 50px;
+      text-transform: uppercase;
+
+      @media (max-width: $tablet-width) {
+        font-size: 32px;
+        padding: 10px 30px;
+      }
+    }
+  }
+
+  .section-subheading {
+    color: $theme-gray;
+    font-size: 36px;
+    font-weight: $font-weight-bold;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-transform: uppercase;
+
+    @media (max-width: $tablet-width) {
+      font-size: 24px;
+    }
+  }
+
+  .section-body {
+    margin-top: 120px;
+
+    @media (max-width: $tablet-width) {
+      margin-top: 70px;
+    }
+  }
+}
+
+.themes-list {
+  list-style: none;
+  padding: 0;
 }
