@@ -31,12 +31,23 @@ ul {
   }
 }
 
+.banner {
+  margin-bottom: 100px;
+}
+
 .logo {
   display: block;
-  margin: 0 auto;
-  margin-top: 100px;
-  max-width: 600px;
+  margin: 100px auto 50px;
+  max-width: 500px;
   width: 80%;
+}
+
+#countdown {
+  text-align: center;
+
+  .countdown-value {
+    font-size: 64px;
+  }
 }
 
 .hashtag {
