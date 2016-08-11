@@ -107,3 +107,34 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+.prize-img {
+  $width: 80%;
+
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  padding-bottom: $width;
+  margin: 0 auto;
+  width: $width;
+
+  &.gear-vr {
+    background-size: 80%;
+    background-image: url('../img/prizes/samsung-gear-vr.jpg');
+  }
+
+  &.gopro {
+    background-size: 60%;
+    background-image: url('../img/prizes/gopro-hero-session.jpg');
+  }
+
+  &.amazon-gift-cards {
+    background-size: 60%;
+    background-image: url('../img/prizes/amazon-gift-cards.png');
+  }
+}
+
+.prize-text {
+  text-align: center;
+}
