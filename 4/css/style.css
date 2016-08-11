@@ -1,0 +1,7 @@
+html, body {
+  background-color: #24b34b; }
+
+.logo {
+  display: block;
+  margin: 30px auto;
+  max-width: 600px; }

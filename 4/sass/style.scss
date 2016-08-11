@@ -1,0 +1,13 @@
+$theme-green: #24b34b;
+
+$brand-primary: $theme-green;
+
+html, body {
+  background-color: $brand-primary;
+}
+
+.logo {
+  display: block;
+  margin: 30px auto;
+  max-width: 600px;
+}
