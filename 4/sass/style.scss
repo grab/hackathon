@@ -2,6 +2,7 @@ $theme-green: #24b34b;
 $theme-gray: #363a45;
 
 $brand-primary: $theme-green;
+$base-color: #fff;
 
 $font-weight-normal: 400;
 $font-weight-bold: 700;
@@ -44,7 +45,6 @@ ul {
 }
 
 .section {
-  $line-color: #fff;
   $degree: -10deg;
   $padding: 30px;
 
@@ -55,7 +55,7 @@ ul {
   &:before {
     $line-width: 200%;
 
-    border-top: 10px solid $line-color;
+    border-top: 10px solid $base-color;
     content: ' ';
     display: block;
     left: -$line-width/4;
@@ -68,7 +68,7 @@ ul {
     transform: rotate($degree) skew($degree);
 
     .section-heading-name {
-      background-color: $line-color;
+      background-color: $base-color;
       color: $theme-gray;
       font-size: 48px;
       font-weight: $font-weight-bold;
@@ -109,52 +109,81 @@ ul {
   padding: 0;
 }
 
-.schedule-section {
-  .schedule-item {
-    $line-color: #fff;
+.subheading-item {
+  color: $theme-gray;
+  font-size: 28px;
+  font-weight: $font-weight-bold;
+  margin-top: 0;
 
-    display: flex;
-    align-items: stretch;
+  @media (max-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
 
-    &:not(:last-child) {
-      .schedule-line:before {
-        content: ' ';
-        background-color: $line-color;
-        bottom: 0;
-        display: block;
-        height: 100%;
-        left: calc(50% - 3px);
-        position: absolute;
-        width: 6px;
-        top: 0;
-      }
-    }
+.timeline-item {
+  display: flex;
+  align-items: stretch;
 
-    .schedule-line {
-      position: relative;
-
-      &:after {
-        $circle-size: 30px;
-
-        content: ' ';
-        background-color: $line-color;
-        border-radius: $circle-size/2;
-        display: block;
-        left: calc(50% - 15px);
-        position: absolute;
-        height: $circle-size;
-        width: $circle-size;
-      }
-    }
-
-    .schedule-item-details {
-      margin-bottom: 50px;
+  &:not(:last-child) {
+    .timeline-line:before {
+      content: ' ';
+      background-color: $base-color;
+      bottom: 0;
+      display: block;
+      height: 100%;
+      left: calc(50% - 3px);
+      position: absolute;
+      width: 6px;
+      top: 0;
     }
   }
 
-  .date-item {
-    color: $theme-gray;
-    font-weight: $font-weight-bold;
+  .timeline-line {
+    position: relative;
+  }
+
+  .timeline-line-circle:after {
+    $circle-size: 30px;
+
+    content: ' ';
+    background-color: $base-color;
+    border-radius: $circle-size/2;
+    display: block;
+    left: calc(50% - 15px);
+    position: absolute;
+    height: $circle-size;
+    width: $circle-size;
+  }
+
+  .timeline-item-details {
+    margin-bottom: 50px;
+  }
+}
+
+.award-circle {
+  $circle-size: 50px;
+
+  background-color: $base-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  border-radius: $circle-size/2;
+  display: block;
+  left: calc(50% - 25px);
+  position: absolute;
+  height: $circle-size;
+  width: $circle-size;
+
+  &.award-most-popular {
+    background-image: url('../img/awards/star.svg');
+  }
+
+  &.award-tech-challenging {
+    background-image: url('../img/awards/lightbulb.svg');
+  }
+
+  &.award-hyperlocal {
+    background-image: url('../img/awards/globe.svg');
   }
 }
 
