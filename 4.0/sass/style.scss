@@ -63,6 +63,10 @@ a {
   font-style: italic;
 }
 
+.black {
+  color: $theme-gray;
+}
+
 .section {
   $degree: -10deg;
   $padding: 30px;
@@ -126,6 +130,10 @@ a {
 .themes-list {
   list-style: none;
   padding: 0;
+
+  .themes-list-item {
+    margin-bottom: 50px;
+  }
 }
 
 .subheading-item {
