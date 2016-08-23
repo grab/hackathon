@@ -13,7 +13,7 @@ html,
 body {
   background-color: $brand-primary;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
   overflow-x: hidden;
 
@@ -50,11 +50,36 @@ a {
   width: 80%;
 }
 
+.btn-cta {
+  background-color: $theme-gray;
+  font-size: 24px;
+  font-weight: $font-weight-bold;
+  padding: 20px 60px;
+  text-transform: uppercase;
+
+  &,
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
 #countdown {
   text-align: center;
 
   .countdown-value {
-    font-size: 64px;
+    font-size: 48px;
+    font-weight: $font-weight-bold;
+  }
+
+  .countdown-col {
+    padding: 10px;
+
+    .countdown-col-content {
+      border: 2px solid #fff;
+      border-radius: 5px;
+      padding: 10px;
+    }
   }
 }
 
