@@ -223,7 +223,7 @@ a {
   background-color: $base-color;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 60%;
   border-radius: $circle-size/2;
   display: inline-block;
   height: $circle-size;
@@ -243,12 +243,8 @@ a {
     background-image: url('../img/icons/chat.svg');
   }
 
-  &.icon-drumstick {
-    background-image: url('../img/icons/drumstick.svg');
-  }
-
-  &.icon-gear {
-    background-image: url('../img/icons/gear.svg');
+  &.icon-cutlery {
+    background-image: url('../img/icons/cutlery.svg');
   }
 
   &.icon-globe {
@@ -271,12 +267,8 @@ a {
     background-image: url('../img/icons/star.svg');
   }
 
-  &.icon-mac {
-    background-image: url('../img/icons/mac.svg');
-  }
-
-  &.icon-marker {
-    background-image: url('../img/icons/marker.svg');
+  &.icon-wrench {
+    background-image: url('../img/icons/wrench.svg');
   }
 }
 
