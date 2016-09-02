@@ -207,6 +207,11 @@ a {
     width: $circle-size;
   }
 
+  .timeline-item-date,
+  .timeline-item-details {
+    margin-top: -5px;
+  }
+
   .timeline-item-details {
     margin-bottom: 50px;
   }
