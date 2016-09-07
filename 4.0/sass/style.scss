@@ -45,8 +45,8 @@ a {
 
 .logo {
   display: block;
-  margin: 100px auto 50px;
-  max-width: 500px;
+  margin: 50px auto 20px;
+  max-width: 200px;
   width: 80%;
 }
 
@@ -68,8 +68,13 @@ a {
   text-align: center;
 
   .countdown-value {
-    font-size: 48px;
+    font-size: 96px;
     font-weight: $font-weight-bold;
+  }
+
+  .countdown-unit {
+    font-size: 48px;
+    transform: translateY(-25px);
   }
 
   .countdown-col {
