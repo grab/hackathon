@@ -1,0 +1,191 @@
+// Theme Colours
+$grab-theme-green: #00ba51;
+$grab-theme-green-light: #38c564;
+$grab-theme-green-dark: #00ba51;
+
+$grab-theme-blue: #488be4;
+$grab-theme-blue-light: #5e9bf2;
+$grab-theme-blue-dark: #326bbf;
+
+$grab-theme-yellow: #f7c942;
+$grab-theme-yellow-light: #f8d367;
+$grab-theme-yellow-dark: #e6ac23;
+
+$grab-theme-red: #d64425;
+$grab-theme-red-light: #e95e41;
+$grab-theme-red-dark: #bd3d22;
+
+$grab-theme-black: #000;
+$grab-theme-gray-xxl: #363a45;
+$grab-theme-gray-xl: #565d6b;
+$grab-theme-gray-l: #898d97;
+$grab-theme-gray-m: #ccd6dd;
+$grab-theme-gray-s: #eaeff2;
+$grab-theme-gray-xs: #f7f9fb;
+$grab-theme-white: #fff;
+
+// Font Sizes
+$font-size-largest: 3.4286rem;
+$font-size-larger: 1.7143rem;
+$font-size-large: 1.2857rem;
+$font-size-base: 1rem;
+$font-size-small: 0.875rem;
+$font-size-smaller: 0.75rem;
+
+// Font Weight
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Site Variables
+$brand-primary: $grab-theme-green;
+$base-color: #fff;
+
+$tablet-width: 768px;
+
+html,
+body {
+  color: $grab-theme-gray-xl;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+a {
+  color: $grab-theme-blue;
+  transition: color 0.3s linear;
+
+  &:hover,
+  &:focus {
+    color: $grab-theme-blue-dark;
+  }
+}
+
+.banner {
+  margin-bottom: 100px;
+
+  .event-date {
+    color: $grab-theme-green;
+    font-size: $font-size-larger;
+    margin-bottom: 2rem;
+  }
+}
+
+.logo {
+  display: block;
+  margin: 50px auto 20px;
+  max-width: 320px;
+  width: 80%;
+}
+
+.btn-cta {
+  background-color: $grab-theme-gray-xxl;
+  font-size: 24px;
+  padding: 20px 60px;
+  text-transform: uppercase;
+
+  &,
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+#countdown {
+  text-align: center;
+
+  .countdown-value {
+    font-size: 96px;
+    font-weight: $font-weight-bold;
+  }
+
+  .countdown-unit {
+    font-size: 48px;
+    transform: translateY(-25px);
+  }
+
+  .countdown-col {
+    padding: 10px;
+
+    .countdown-col-content {
+      border: 2px solid #fff;
+      border-radius: 5px;
+      padding: 10px;
+    }
+  }
+}
+
+.section {
+  $spacing: 2rem;
+
+  margin: $spacing 0;
+
+  &:nth-child(even) {
+    background-color: $grab-theme-gray-xs;
+  }
+
+  .section-col {
+    padding: 5rem 3rem;
+  }
+
+  .section-heading,
+  .section-subheading {
+    color: $grab-theme-gray-xxl;
+  }
+
+  .section-heading {
+    font-size: $font-size-largest;
+    font-weight: $font-weight-light;
+    text-transform: uppercase;
+  }
+
+  .section-subheading {
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+    margin-bottom: 1rem;
+  }
+
+  .subsection {
+    margin: 3rem 0;
+
+    &:first-of-type {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.themes-section {
+  .themes-background {
+    background-image: url('../img/presentation.jpg');
+    background-position: right;
+    background-size: cover;
+  }
+}
+
+.prizes-section {
+  background-image: url('../img/amazon.svg');
+  background-position: bottom;
+}
+
+.schedule-section {
+  background-image: url('../img/audience.jpg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+}
+
+.queries-section {
+  .cap {
+    margin-bottom: 2rem;
+    max-width: 200px;
+    width: 50%;
+  }
+
+  .text {
+    font-size: $font-size-larger;
+  }
+}
