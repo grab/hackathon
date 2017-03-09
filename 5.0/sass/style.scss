@@ -51,7 +51,7 @@ body {
   overflow-x: hidden;
 
   @media (max-width: $tablet-width) {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -120,9 +120,7 @@ a {
 }
 
 .section {
-  $spacing: 2rem;
-
-  margin: $spacing 0;
+  position: relative;
 
   &:nth-child(even) {
     background-color: $grab-theme-gray-xs;
@@ -156,26 +154,65 @@ a {
       margin-top: 2rem;
     }
   }
+
+  .section-background {
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+
+    @media (max-width: $tablet-width) {
+      height: 400px;
+      width: 100%;
+      position: static;
+    }
+  }
 }
 
 .themes-section {
   .themes-background {
-    background-image: url('../img/presentation.jpg');
+    background-image: url('../img/presentation-desat.jpg');
     background-position: right;
     background-size: cover;
   }
 }
 
 .prizes-section {
-  background-image: url('../img/amazon.svg');
-  background-position: bottom;
+  .prizes-background {
+    background-image: url('../img/audience.jpg');
+    right: 0;
+  }
+
+  .sponsor {
+    color: $grab-theme-gray-l;
+    font-size: $font-size-small;
+  }
+}
+
+.rules-section {
+  background-image: url('../img/wrench.svg'), url('../img/flag.svg');
+  background-repeat: no-repeat;
+  background-size: 20%, 30%;
+  background-position: -7% 100%, 115% 7%;
 }
 
 .schedule-section {
-  background-image: url('../img/audience.jpg');
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
+  .schedule-background {
+    background-image: url('../img/audience-desat.jpg');
+    background-position: 70%;
+    right: 0;
+  }
+
+  .timing {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+  }
+
+  .event {
+    display: inline-block;
+    width: 70%
+  }
 }
 
 .queries-section {
