@@ -1,28 +1,5 @@
-// Theme Colours
-$grab-theme-green: #00ba51;
-$grab-theme-green-light: #38c564;
-$grab-theme-green-dark: #00ba51;
-
-$grab-theme-blue: #488be4;
-$grab-theme-blue-light: #5e9bf2;
-$grab-theme-blue-dark: #326bbf;
-
-$grab-theme-yellow: #f7c942;
-$grab-theme-yellow-light: #f8d367;
-$grab-theme-yellow-dark: #e6ac23;
-
-$grab-theme-red: #d64425;
-$grab-theme-red-light: #e95e41;
-$grab-theme-red-dark: #bd3d22;
-
-$grab-theme-black: #000;
-$grab-theme-gray-xxl: #363a45;
-$grab-theme-gray-xl: #565d6b;
-$grab-theme-gray-l: #898d97;
-$grab-theme-gray-m: #ccd6dd;
-$grab-theme-gray-s: #eaeff2;
-$grab-theme-gray-xs: #f7f9fb;
-$grab-theme-white: #fff;
+@import 'font';
+@import 'theme';
 
 // Font Sizes
 $font-size-largest: 3.4286rem;
@@ -46,7 +23,7 @@ $tablet-width: 768px;
 html,
 body {
   color: $grab-theme-gray-xl;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Sanomat Sans', sans-serif;
   font-size: 14px;
   overflow-x: hidden;
 
@@ -65,8 +42,12 @@ a {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
-  width: 960px;
+  width: $tablet-width;
 }
 
 .banner {
@@ -88,7 +69,7 @@ a {
 
 .btn-cta {
   background-color: $grab-theme-gray-xxl;
-  font-size: 24px;
+  font-size: $font-size-large;
   padding: 20px 60px;
   text-transform: uppercase;
 
@@ -96,6 +77,12 @@ a {
   &:hover,
   &:focus {
     color: #fff;
+  }
+
+  & + .btn-cta-deadline {
+    color: $grab-theme-gray-l;
+    font-size: $font-size-large;
+    margin-top: 1rem;
   }
 }
 
@@ -134,18 +121,16 @@ a {
     padding: 5rem 3rem;
   }
 
-  .section-heading,
-  .section-subheading {
-    color: $grab-theme-gray-xxl;
-  }
-
   .section-heading {
+    color: $grab-theme-green;
     font-size: $font-size-largest;
     font-weight: $font-weight-light;
+    letter-spacing: 3px;
     text-transform: uppercase;
   }
 
   .section-subheading {
+    color: $grab-theme-gray-xxl;
     font-size: $font-size-large;
     font-weight: $font-weight-bold;
     margin-bottom: 1rem;
@@ -175,15 +160,17 @@ a {
 
 .themes-section {
   .themes-background {
-    background-image: url('../img/presentation-desat.jpg');
-    background-position: right;
+    background-image: url('../img/presentation.jpg');
     background-size: cover;
   }
 }
 
 .prizes-section {
   .prizes-background {
-    background-image: url('../img/audience.jpg');
+    background-image: url('../img/prizes.png');
+    background-position: 21% 100%;
+    background-repeat: no-repeat;
+    background-size: 80%;
     right: 0;
   }
 
@@ -202,7 +189,7 @@ a {
 
 .schedule-section {
   .schedule-background {
-    background-image: url('../img/audience-desat.jpg');
+    background-image: url('../img/audience.jpg');
     background-position: 70%;
     right: 0;
   }
@@ -227,6 +214,12 @@ a {
   }
 
   .text {
-    font-size: $font-size-larger;
+    font-size: $font-size-large;
   }
+}
+
+.footer-section {
+  background-image: url('../img/footer.jpg');
+  background-size: cover;
+  padding: 4rem 0 1.75rem;
 }
