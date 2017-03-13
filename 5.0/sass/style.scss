@@ -46,8 +46,10 @@ a {
   display: none;
 }
 
-.container {
-  width: $tablet-width;
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+  }
 }
 
 .banner {
@@ -56,13 +58,13 @@ a {
   .event-date {
     color: $grab-theme-green;
     font-size: $font-size-larger;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
   }
 }
 
 .logo {
   display: block;
-  margin: 50px auto 20px;
+  margin: 2rem auto 4rem;
   max-width: 320px;
   width: 80%;
 }
