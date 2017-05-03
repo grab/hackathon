@@ -1,3 +1,0 @@
-# Hackathon
-
-Official Grabathon websites.
