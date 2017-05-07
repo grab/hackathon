@@ -24,7 +24,9 @@ function initializeClock(id, endtime) {
   function updateClock() {
     var t = getTimeRemaining(endtime);
 
-    daysSpan.innerHTML = t.days;
+    if (daysSpan) {
+      daysSpan.innerHTML = t.days;
+    }
     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
@@ -38,5 +40,5 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date("April 4, 2017 23:59:59");
-// initializeClock('countdown', deadline);
+var deadline = new Date("May 9, 2017 10:00:00");
+initializeClock('countdown', deadline);
