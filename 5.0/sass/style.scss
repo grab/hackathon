@@ -53,6 +53,8 @@ a {
 }
 
 .banner {
+  margin-bottom: 50px;
+
   .event-date {
     color: $grab-theme-green;
     font-size: $font-size-larger;
@@ -86,24 +88,36 @@ a {
   }
 }
 
+.section:nth-child(even).countdown-section {
+  background-color: $grab-theme-gray-xxl;
+  color: $grab-theme-gray-xs;
+}
+
 #countdown {
   text-align: center;
 
   .countdown-value {
     font-size: 96px;
     font-weight: $font-weight-bold;
+
+    @media (max-width: $tablet-width) {
+      font-size: 72px;
+    }
   }
 
   .countdown-unit {
     font-size: 48px;
     transform: translateY(-25px);
+
+    @media (max-width: $tablet-width) {
+      font-size: 36px;
+    }
   }
 
   .countdown-col {
     padding: 10px;
 
     .countdown-col-content {
-      border: 2px solid #fff;
       border-radius: 5px;
       padding: 10px;
     }
