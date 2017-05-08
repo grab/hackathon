@@ -194,6 +194,28 @@ a {
   }
 }
 
+.judges-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &:after {
+    content: "";
+    flex: auto;
+  }
+
+  .judge-photo {
+    display: inline-flex;
+    margin: 10px;
+
+    img {
+      height: 80px;
+      border-radius: 50%;
+    }
+  }
+}
+
 .rules-section {
   background-image: url('../img/wrench.svg'), url('../img/flag.svg');
   background-repeat: no-repeat;
