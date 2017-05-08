@@ -210,12 +210,21 @@ a {
     display: inline-flex;
     margin: 10px;
     
-    &:hover {
+    &:nth-child(odd):hover {
       animation: wiggle 0.5s infinite;
     }
 
-    &:nth-last-child(2):hover {
+    &:nth-child(even):hover {
       animation: jump 0.5s infinite;
+    }
+
+    &:first-child:hover {
+      animation: bob 0.5s infinite;
+      animation-direction: alternate;
+    }
+
+    &:nth-child(2):hover {
+      animation: slide 0.5s infinite;
     }
 
     img {
