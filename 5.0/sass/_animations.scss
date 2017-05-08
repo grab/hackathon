@@ -1,13 +1,27 @@
 @keyframes wiggle {
 	0% {
-		transform:rotate(4deg);
+		transform: rotate(4deg);
 	}
 
 	50% {
-		transform:rotate(-4deg);
+		transform: rotate(-4deg);
 	}
 
 	100% {
-		transform:rotate(4deg);
+		transform: rotate(4deg);
+	}
+}
+
+@keyframes jump {
+	0% {
+		transform: translateY(3px);
+	}
+
+	50% {
+		transform: translateY(-3px);
+	}
+
+	100% {
+		transform: translateY(3px);
 	}
 }

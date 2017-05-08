@@ -214,6 +214,10 @@ a {
       animation: wiggle 0.5s infinite;
     }
 
+    &:nth-last-child(2):hover {
+      animation: jump 0.5s infinite;
+    }
+
     img {
       height: 80px;
       border-radius: 50%;
