@@ -1,5 +1,6 @@
 @import '_font';
 @import '_theme';
+@import '_animations';
 
 // Font Sizes
 $font-size-largest: 3.4286rem;
@@ -208,6 +209,10 @@ a {
   .judge-photo {
     display: inline-flex;
     margin: 10px;
+    
+    &:hover {
+      animation: wiggle 0.5s infinite;
+    }
 
     img {
       height: 80px;
