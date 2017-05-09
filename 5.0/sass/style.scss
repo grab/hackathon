@@ -89,7 +89,7 @@ a {
   }
 }
 
-.section:nth-child(even).countdown-section {
+.countdown-section {
   background-color: $grab-theme-gray-xxl;
   color: $grab-theme-gray-xs;
 }
@@ -209,7 +209,7 @@ a {
   .judge-photo {
     display: inline-flex;
     margin: 10px;
-    
+
     &:nth-child(odd):hover {
       animation: wiggle 0.5s infinite;
     }

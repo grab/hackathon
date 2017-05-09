@@ -41,4 +41,4 @@ function initializeClock(id, endtime) {
 }
 
 var deadline = new Date("May 9, 2017 11:00:00");
-initializeClock('countdown', deadline);
+// initializeClock('countdown', deadline);
