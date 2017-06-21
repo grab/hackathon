@@ -1,4 +1,3 @@
-@import '_font';
 @import '_theme';
 @import '_animations';
 
@@ -24,7 +23,7 @@ $tablet-width: 768px;
 html,
 body {
   color: $grab-theme-gray-xl;
-  font-family: 'Sanomat Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   overflow-x: hidden;
 
