@@ -36,6 +36,7 @@
             </div>
           </div>
         </div>
+        <div class="countdown" style="display: none;"></div>
       </div>
 
       <svg class="curveUpColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -171,6 +172,10 @@
             <h5>Day 1 - October 30th</h5>
             <table>
               <tr>
+                <td>12:00 AM</td>
+                <td>Registration close</td>
+              </tr>
+              <tr>
                 <td>10:00 AM</td>
                 <td>Registration confirmation</td>
               </tr>
@@ -256,10 +261,45 @@
         <p>
           For queries and questions please reach out via the official Slack channel <a href="https://grab.slack.com/messages/grabathon">#grabathon</a>.
         </p>
+        <div class="countdown" style="display: none;"></div>
         <div class="button-slanted">
           <a href="#" class="button-slanted-content action-button">Register</a>
         </div>
       </div>
     </section>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script>
+     const begin = Date.parse('October 30, 2017 11:00:00 +0800');
+     const registrationEnd = Date.parse('October 30, 2017 00:00:00 +0800');
+     const end = Date.parse('October 31, 2017 12:00:00 +0800');
+     const now = new Date();
+     if (begin > now) {
+         const countdowns = $('.countdown');
+         countdowns.countdown({
+             date: begin,
+             render: function(data) {
+                 $(this.el).text('Starts in ' + data.days + ' days, ' + data.hours + ' hours, ' + data.min + ' minutes, ' + data.sec + ' seconds');
+             },
+         });
+         countdowns.show();
+         if (registrationEnd < now) {
+             $('.button-slanted').replaceWith('<h3 class="slogan">Registration closed</h3>');
+         }
+     } else if (end > now) {
+         const countdowns = $('.countdown');
+         countdowns.countdown({
+             date: end,
+             render: function(data) {
+                 $(this.el).text('' + data.days + ' days, ' + data.hours + ' hours, ' + data.min + ' minutes, ' + data.sec + ' seconds left before the end');
+             },
+         });
+         countdowns.show();
+         $('.button-slanted').replaceWith('<h1 class="date">Let\'s go!</h1>');
+     } else {
+         $('.button-slanted').replaceWith('<h2 class="slogan">Grabathon 6.0 ended.<br />We hope you had fun!</h2>');
+     }
+    </script>
   </body>
 </html>
