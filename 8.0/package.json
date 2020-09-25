@@ -1,0 +1,27 @@
+{
+  "name": "grabathon-v7",
+  "version": "1.0.0",
+  "description": "static gen for grabathon-v7",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajmalafif/grabathon-onepager.git"
+  },
+  "author": "Ajmal Afif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajmalafif/grabathon-onepager/issues"
+  },
+  "homepage": "https://github.com/ajmalafif/grabathon-onepager#readme",
+  "dependencies": {
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-csso": "^3.0.1"
+  }
+}
