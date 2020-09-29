@@ -173,7 +173,7 @@ h4 {
   margin-top: 8vh;
   margin-bottom: 2vh;
   height: 65vh;
-  min-height: 500px;
+  min-height: 615px;
 }
 @media only screen and (max-width: 480px) {
   .intro .header {
@@ -860,6 +860,7 @@ h4 {
 
 .font-25 {
   font-size: 25px;
+  font-weight: 600;
 }
 
 .divider {
@@ -872,4 +873,12 @@ h4 {
 
 .text-center {
   text-align: center;
+}
+
+.link {
+  color: #1890ff;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
