@@ -173,6 +173,7 @@ h4 {
   margin-top: 8vh;
   margin-bottom: 2vh;
   height: 65vh;
+  min-height: 580px;
 }
 @media only screen and (max-width: 480px) {
   .intro .header {
@@ -209,8 +210,7 @@ h4 {
 .btn-grab {
   border-radius: 12px;
   border: solid 2px var(--green);
-  background: var(--green);
-  color: #fff;
+  color: var(--green);
   white-space: nowrap;
   padding: 4px 16px;
   transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -220,7 +220,7 @@ h4 {
   color: var(--green);
 }
 .btn-grab .button-text {
-  font-family: var(--font-bold);
+  font-family: var(--font-medium);
   font-size: 24px;
   display: inline-block;
   vertical-align: middle;
@@ -855,4 +855,16 @@ h4 {
   .section--theme .column__image {
     text-align: center;
   }
+}
+
+.font-25 {
+  font-size: 25px;
+}
+
+.divider {
+  border-left: 1px solid var(--green);
+}
+
+.mt-30 {
+  margin-top: 30px;
 }
