@@ -178,6 +178,8 @@ h4 {
 @media only screen and (max-width: 480px) {
   .intro .header {
     height: 80vh;
+    padding: 0 20px;
+    min-height: 675px;
   }
 }
 @media only screen and (min-width: 1200px) {
