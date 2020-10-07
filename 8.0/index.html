@@ -24,11 +24,23 @@
     <meta name="twitter:title" content="Grabathon v8.0">
     <meta name="twitter:description" content="Grabathon v8.0 is happening Oct 22nd — Oct 24th 2020. See you there.">
     <!-- <meta name="twitter:image" content="https://d39uo3k0liehyo.cloudfront.net/assets/grabathon.png"> -->
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/main.min.css?v=v1">
   </head>
 
   <body>
     <div id="main">
+      <div class="navbar hide_header" id='header'>
+        <div class="logo"><img src="images/new-images/favicon/favicon_196px.png" alt="logo" />
+        </div>
+        <div class="navlinks">
+          <a href="#theme">Themes</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#prize">Prizes</a>
+          <a href="#judges">Judges</a>
+          <a href="#rules">Rules</a>
+          <a href="#faq">FAQs</a>
+        </div>
+      </div>
       <!-- logo here -->
 
       <div id="intro" class="intro">
@@ -80,7 +92,7 @@
                 </section>
                 <!-- end of try-->
 
-                <h2 id="theme"><a id="theme"></a>Theme</h2>
+                <h2 id="theme" class="id-div"><a id="theme"></a>Theme</h2>
                 <a href="#theme">
                   <h3>6 categories</h3>
                 </a>
@@ -155,7 +167,7 @@
               <div class="container section-title">
                 <!-- <h2 id="schedule"><a id="theme"></a>2-Day Event</h2> -->
                 <a href="#schedule">
-                  <h3>Time schedule</h3>
+                  <h3 id="schedule" class="id-div">Time schedule</h3>
                 </a>
               </div>
 
@@ -204,7 +216,7 @@
             <!-- Schedule -->
             <section class="jumbotron section section--main section--prize">
               <div class="container section-title">
-                <h2 id="prize"><a id="prize"></a>Award for winners</h2>
+                <h2 id="prize" class="id-div"><a id="prize"></a>Award for winners</h2>
                 <a href="#prize">
                   <h3>Prizes</h3>
                 </a>
@@ -247,7 +259,7 @@
 
             <section class="jumbotron section section--alternate section--judges">
               <div class="container section-title">
-                <h2 id="judges"><a id="judges"></a>Panel</h2>
+                <h2 id="judges" class="id-div"><a id="judges"></a>Panel</h2>
                 <a href="#judges">
                   <h3>Judges Scorecard</h3>
                 </a>
@@ -280,7 +292,7 @@
             <!-- Developers Rule -->
             <section class="jumbotron section section--main section--rules">
               <div class="container section-title">
-                <h2 id="rules"><a id="rules"></a>Rules & Regulations</h2>
+                <h2 id="rules" class="id-div"><a id="rules"></a>Rules & Regulations</h2>
                 <a href="#rules">
                   <h3>Developer Rules
                 </a>
@@ -304,8 +316,8 @@
 
             <section class="jumbotron section section--alternate section--rules">
               <div class="container section-title">
-                <a href="#faq" id='faq'>
-                  <h3>FAQs
+                <a href="#faq">
+                  <h3 class="id-div" id='faq'>FAQs</h3>
                 </a>
                 <div class="container column">
                   <ol>
@@ -364,8 +376,7 @@
                       Q. What if my team has only a few members, can I still participate?<br />
                       A: Yes, however the recommended team size is 6, and as inclusive as possible (1 business, 1
                       product, 2 backend engg, 1
-                      fullstack/frontend engg, 1 QA), and the maximum team size is 10. Register at hackathon.grab.com.
-                      (edited)</li>
+                      fullstack/frontend engg, 1 QA), and the maximum team size is 10.</li>
                     </li>
                   </ol>
                 </div>
@@ -382,7 +393,7 @@
       </main>
     </div>
 
-    <script src="scripts/main.min.js"></script>
+    <script src="scripts/main.min.js?v=v1"></script>
   </body>
 
 </html>
