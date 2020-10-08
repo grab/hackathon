@@ -175,13 +175,23 @@ h4 {
   height: 65vh;
   min-height: 615px;
 }
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 760px) {
   .intro .header {
     height: 80vh;
     padding: 0 20px;
     min-height: 675px;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .intro .header {
+    height: 80vh;
+    padding: 0 20px;
+    min-height: 780px;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .intro .header {
     height: 70vh;
@@ -883,4 +893,49 @@ h4 {
 
 .link:hover {
   text-decoration: underline;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: white;
+  justify-content: space-between;
+  padding: 16px 50px;
+  align-items: center;
+  z-index: 9;
+  box-shadow: 0px 2px 7px -1px #808080ab;
+  display: flex;
+  transition: ease-in 0.2s;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+.navbar .logo img {
+  height: 30px;
+}
+
+.navlinks {
+  display: flex;
+}
+.navlinks a {
+  font-size: 14px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.navlinks a:hover {
+  color: var(--green);
+}
+
+.id-div {
+  padding-top: 120px;
+  margin-top: -120px;
+}
+
+.hide_header {
+  top: -64px;
 }
