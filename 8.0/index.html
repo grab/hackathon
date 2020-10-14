@@ -24,7 +24,7 @@
     <meta name="twitter:title" content="Grabathon v8.0">
     <meta name="twitter:description" content="Grabathon v8.0 is happening Oct 22nd — Oct 24th 2020. See you there.">
     <!-- <meta name="twitter:image" content="https://d39uo3k0liehyo.cloudfront.net/assets/grabathon.png"> -->
-    <link rel="stylesheet" href="styles/main.min.css?v=v1">
+    <link rel="stylesheet" href="styles/main.min.css?v=v2">
   </head>
 
   <body>
@@ -37,6 +37,7 @@
           <a href="#schedule">Schedule</a>
           <a href="#prize">Prizes</a>
           <a href="#judges">Judges</a>
+          <a href="#resources">Resources</a>
           <a href="#rules">Rules</a>
           <a href="#faq">FAQs</a>
         </div>
@@ -287,24 +288,58 @@
             </section>
             <!-- End of wavy SVG -->
 
-            <!-- Developers Rule -->
-            <section class="jumbotron section section--main section--rules">
-              <div class="container section-title">
-                <h2 id="rules" class="id-div"><a id="rules"></a>Rules & Regulations</h2>
-                <a href="#rules">
-                  <h3>Developer Rules
-                </a>
-                <div class="container column">
-                  <ol>
-                    <li>All teams should be as 'inclusive' as possible. The recommended team size is 6: 1 from Business,
-                      1 from product, 1 from frontend/fullstack, 2 from backend, 1 from QA</li>
-                    <li>The maximum team size is 10 members.</li>
-                  </ol>
-                </div>
-              </div>
-            </section>
+                        <!-- Developers Rule -->
+                        <section class="jumbotron section section--main section--rules">
+                          <div class="container section-title">
+                            <h2 >Resources</h2>
+                            <a href="#resources">
+                              <h3 id="resources" class="id-div">Developer Resources
+                            </a>
+                            <div class="container column">
+                              <div>
+                                <div class="flex">
+                                    <div>Repository</div>
+                                    <div>Link</div>
+                                </div>
+                                  <div class="flex">
+                                    <div>
+                                      iOS pax app repo gitlab
+                                    </div>
+                                    <div>
+                                      <a href='https://gitlab.myteksi.net/mobile/pax-ios' target="_blank">https://gitlab.myteksi.net/mobile/pax-ios</a>
+                                    </div>
+                                  </div>
+                                  <div class="flex">
+                                    <div>
+                                      ADR pax app repo gitlab
+                                    </div>
+                                    <div>
+                                      <a href='https://gitlab.myteksi.net/mobile/pax-android' target="_blank">https://gitlab.myteksi.net/mobile/pax-android</a>
+                                    </div>
+                                  </div>
+                                  <div class="flex">
+                                    <div>
+                                      Backend Code
+                                    </div>
+                                    <div>
+                                      Non-GFG: GitLab monorepo <br/>
+                                      GFG: <a href='https://bitbucket.org/grabpay/grabathon/src/master/' target="_blank">https://bitbucket.org/grabpay/grabathon/src/master/</a>
+                                    </div>
+                                  </div>
+                                  <div class="flex">
+                                    <div>
+                                      Flutter monorepo gitlab
+                                    </div>
+                                    <div>
+                                      <a href='https://gitlab.myteksi.net/mobile/monorepo' target="_blank">https://gitlab.myteksi.net/mobile/monorepo</a>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
 
-            <!-- wavy SVG -->
+                                    <!-- wavy SVG -->
             <section class="section--wavy-bg clearfix">
               <div class="image-wrapper">
                 <img class="flipped" src="images/shape1.svg" alt="wavy">
@@ -312,7 +347,75 @@
             </section>
             <!-- End of wavy SVG -->
 
+            <!-- Developers Rule -->
             <section class="jumbotron section section--alternate section--rules">
+              <div class="container section-title">
+                <h2 >Rules &  Regulation</h2>
+                <a href="#rules">
+                  <h3 id="rules" class="id-div">Developer Rules
+                </a>
+                <div class="container column">
+                  <ol>
+                    <li>All teams should be as 'inclusive' as possible. The recommended team size is 6: 1 from Business,
+                      1 from product, 1 from frontend/fullstack, 2 from backend, 1 from QA</li>
+                    <li>The maximum team size is 10 members.</li>
+                    <li>
+                      iOS and Android
+                      <ol>
+                        <li>Create branches with name grabathon-8-[team-name]</li>
+                          <li>Push code to this branch</li>
+                            <li>Deploy using IPA/APK or Xcode/Studio using debug mode on the simulator or test devices</li>
+                              <li>Backend changes can be deployed to staging and no changes will be required to access the same or it can be mocked locally on a laptop
+                          </li>
+                      </ol>
+                    </li>
+                    <li>
+                      Flutter
+                      <ol>
+                        <li>Apps written fully in flutter:
+                        <ol>
+                          <li>Create branches with name grabathon-8-[team-name]</li>
+                            <li>Add new folder in apps directory
+                            </li>
+                            <li>Push code to this branch</li>
+                            <li>Build and deploy using flutter tooling</li>
+                        </ol>
+                      </li>
+                      <li>Native apps with flutter as a module:
+                        <ol>
+                          <li>Create branches with name grabathon-8-[team-name]</li>
+                            <li>Add new folder in flutter_pax directory
+
+                            </li>
+                            <li>Push code to this branch</li>
+                            <li>Build and deploy using XCode/Studio as native app</li>
+                        </ol>
+                      </li>
+                      </ol>
+                    </li>
+                    <li>
+                      Backend:
+                      <ol>
+                        <li>Teams can build a mock backend server on a laptop within your team and ask the mobile engineers to integrate with the same
+                        </li>
+                        <li>Teams can also merge your code to a custom hackathon branch (with name grabathon-8-[team-name]).
+                        </li>
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </section>
+
+            <!-- wavy SVG -->
+            <section class="section--wavy-bg clearfix">
+              <div class="pos-relative image-wrapper">
+                <img class="flipped pos-absolute" src="images/shape2.svg" alt="wavy">
+              </div>
+            </section>
+            <!-- End of wavy SVG -->
+
+            <section class="jumbotron section section--main section--rules">
               <div class="container section-title">
                 <a href="#faq">
                   <h3 class="id-div" id='faq'>FAQs</h3>
@@ -357,7 +460,7 @@
                     </li>
                     <li>
                       Q. Are all problem statements visible to all teams before and during the hackathon?<br />
-                      A: Yes — check them out <a class="link" href="https://docs.google.com/spreadsheets/d/1PHkgfoexCAQyVMiEiufC4sKQ-CaxPowifWMxX5284d8/" target="_blank">here!</a>.
+                      A: Yes — check them out <a href="https://docs.google.com/spreadsheets/d/1PHkgfoexCAQyVMiEiufC4sKQ-CaxPowifWMxX5284d8/" target="_blank">here!</a>.
                     </li>
                     <li>
                       Q. Can I work on a problem statement that is not part of the submitted list?<br />
