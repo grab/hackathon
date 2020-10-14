@@ -48,9 +48,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
+
 p {
   font-family: var(--font-regular);
   font-size: 2.1rem;
@@ -957,4 +955,8 @@ h4 {
 
 .flex div:first-child {
   min-width: 274px;
+}
+
+.white-link:hover {
+  text-decoration: underline;
 }
