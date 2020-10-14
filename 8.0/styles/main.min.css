@@ -48,6 +48,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 p {
   font-family: var(--font-regular);
   font-size: 2.1rem;
@@ -938,4 +941,20 @@ h4 {
 
 .hide_header {
   top: -64px;
+}
+
+.flex {
+  display: flex;
+  margin: 20px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 460px) {
+  .flex {
+    display: block;
+  }
+}
+
+.flex div:first-child {
+  min-width: 274px;
 }
