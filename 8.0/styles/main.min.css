@@ -174,7 +174,7 @@ h4 {
   margin-top: 8vh;
   margin-bottom: 2vh;
   height: 65vh;
-  min-height: 615px;
+  min-height: 600px;
 }
 
 @media only screen and (max-width: 760px) {
@@ -959,4 +959,9 @@ h4 {
 
 .white-link:hover {
   text-decoration: underline;
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 1.9rem;
 }
