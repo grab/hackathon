@@ -460,10 +460,22 @@
                     <li>
                       Backend:
                       <ol>
-                        <li>Teams can build a mock backend server on a laptop within your team and ask the mobile engineers to integrate with the same
-                        </li>
-                        <li>Teams can also merge your code to a custom hackathon branch (with name grabathon-8-[team-name]).
-                        </li>
+                        <li>
+                          Teams can build a mock backend server on a laptop within your team and ask the mobile engineers to integrate with the same</li>
+                          <li>Teams can also merge your code to a custom hackathon branch (with name grabathon-8-[team-name]).</li>
+                          <li>If teams wish to deploy on staging:
+                            <ol>
+                              <li>
+                                They would need to format their service name as "g8-[team_name]-[service_number]".<br/> E.g. As team "Hackathon Geeks", if I want to deploy 2 services on staging for the hackathon:
+                                <br/>Service 1: g8-hackathongeeks-1
+                                <br/>Service 2: g8-hackathongeeks-2
+                                <br/><br/> Note: GFG has a strict limitation of maximum 10 characters in the service name. The staging deployment format for GFG would be<br/> "g8-[first_5_chars_of_team_name]-[service_number]"
+                              </li>
+                              <li>
+                                They would need to deploy on their existing staging infrastructure with the right service names.
+                                <br/>In case of any queries / approvals during the hackathon, please reach out to @anshu.prateek (GFG) and @althaf.hameez (non-GFG).</li>
+                              </li>
+                            </ol>
                       </ol>
                     </li>
                   </ol>
